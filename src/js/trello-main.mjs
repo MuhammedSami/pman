@@ -22,7 +22,7 @@ import {addListTrello} from './add-list.mjs'
 		this.node.id = 'board'
 		this.titleNode.id = 'trello-title-board'
 		this.listsNode.id = 'trello-canvas-board'
-
+		this.titleNode.contentEditable = true
 		// new list title form
 		this.titleFormNode = buildListTitleForm()
 		this.titleNode.appendChild(document.createTextNode(this.title))
@@ -61,7 +61,6 @@ import {addListTrello} from './add-list.mjs'
 	Board.prototype.unregisterCard = function (card) {
 		delete this.cards[card.id]
 	}
-
 
 	document.getElementById('card-edit-close').onclick = cardEdit.close
 

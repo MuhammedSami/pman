@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   background-color: #0079BF;
 }
@@ -174,10 +178,12 @@ body, button, html, input, select, textarea {
 }
 
 #trello-title-board {
-  padding: 10px 8px;
+  padding: 10px 8px 20px;
   font-size: 18px;
   line-height: 30px;
   color: #f6f6f6;
+  width:200px;
+  height: 20px;
   font-weight: bold;
 }
 
