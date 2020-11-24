@@ -1,4 +1,4 @@
-var cardEdit =
+export var cardEdit =
 { node: document.getElementById('card-edit')
 	, windowOverlay: document.getElementById('container-main')
 	, titleNode: document.getElementById('card-edit-title')

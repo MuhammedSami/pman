@@ -1,5 +1,7 @@
 //This function will called on adding the list on the board
-function addListTrello(board) {
+import {List} from './list.mjs'
+
+export function addListTrello(board) {
 	return function () {
 		var titleInput = document.getElementById('trello-list-title-input')
 

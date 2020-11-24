@@ -1,4 +1,8 @@
-function List(board, title, index, dummyList) {
+import {dragTracker,Card} from './card.mjs'
+import {addCardTrello} from './add-card.mjs'
+import {buildCardTitleForm} from './card-title-form.mjs'
+
+export function List(board, title, index, dummyList) {
 	this.board = board
 	this.dummyList = dummyList
 	this.title = title

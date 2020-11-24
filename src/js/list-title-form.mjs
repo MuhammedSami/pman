@@ -1,7 +1,7 @@
 /*
 This function will build the form for list,It is called by addList
  */
-function buildListTitleForm() {
+export function buildListTitleForm() {
 	var node = document.createElement('form')
 	node.innerHTML =
 		'<div class="newitem-title-wrapper">' +

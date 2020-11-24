@@ -1,8 +1,9 @@
 /*
  This function will add the Card in the list
  */
+import {Card} from './card.mjs'
 
-function addCardTrello(list) {
+export 	function addCardTrello(list) {
 	return function () {
 		var titleTextarea = list.titleFormNode
 			.getElementsByClassName('trello-new-card-title-input')[0]

@@ -1,10 +1,12 @@
-var dragTracker =
+import {cardEdit} from './card-edit.mjs'
+
+export var dragTracker =
 {
 	id: undefined,list: undefined
 }
 
 //this function will build the card node
-function buildCardNode() {
+export function buildCardNode() {
 	var node = document.createElement('div')
 	node.draggable = true
 	node.innerHTML =
@@ -15,7 +17,7 @@ function buildCardNode() {
 /*
  This function is constructor function for card
  */
-function Card(list, title) {
+export function Card(list, title) {
 	this.id = list.board.getNextId()
 	this.list = list
 	this.title = title

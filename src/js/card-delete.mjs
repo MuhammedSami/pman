@@ -1,8 +1,10 @@
 /*
  This function deletes the card
  */
-var cardDeleteTrello = {};
-var currentBoard;
+import {cardEdit} from './card-edit.mjs'
+
+export var cardDeleteTrello = {};
+export var currentBoard = null;
 
 cardDeleteTrello.delete = function () {
 	var index = currentBoard.cards[cardEdit.card.id].index

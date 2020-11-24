@@ -1,3 +1,9 @@
+import {buildListTitleForm} from './list-title-form.mjs'
+import {List} from './list.mjs'
+import {cardEdit} from './card-edit.mjs'
+import {cardDeleteTrello,currentBoard} from './card-delete.mjs'
+import {addListTrello} from './add-list.mjs'
+
 (function () {
 	'use strict'
 
@@ -72,7 +78,6 @@
 		}
 	}
 
-
 	//Onloading the document render the board.The code starts from here
 	document.body.onload = function () {
 		var title = 'Add New Board'
@@ -80,6 +85,6 @@
 
 		board.render()
 		document.getElementById('container').appendChild(board.node)
-		currentBoard = board
+		//currentBoard = board
 	}
 }())

@@ -1,7 +1,7 @@
 /*
  This function is called to build the card form
  */
-function buildCardTitleForm() {
+export function buildCardTitleForm() {
 	var node = document.createElement('form')
 	node.innerHTML =
 		'<div class="newitem-title-wrapper">' +
